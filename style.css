@@ -1,16 +1,29 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header {
+.header-content {
     background-color: #4CAF50;
     color: #fff;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
+    border-bottom: 6px solid #388E3C;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 header nav ul {
@@ -27,12 +40,39 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #388E3C;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #f0f0f0;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #388E3C;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+section article {
+    margin-bottom: 20px;
 }
 
 footer {
@@ -43,4 +83,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
 }
