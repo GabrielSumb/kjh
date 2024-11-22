@@ -1,1 +1,34 @@
+/* Global Styles */
+body {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Slideshow */
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+/* Input Focus */
+input:focus {
+  border-color: #f44336;
+  box-shadow: 0 0 5px rgba(244, 67, 54, 0.5);
+}
+
+/* Button Hover Effect */
+button {
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .w3-container {
+    padding: 20px;
+  }
+}
 
