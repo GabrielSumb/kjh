@@ -1,26 +1,27 @@
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+// Automatic Slideshow
+let slideIndex = 0;
+showSlides();
 
-function carousel() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  myIndex++;
-  if (myIndex > slides.length) {
-    myIndex = 1;
-  }
-  slides[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 4 seconds
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000);
 }
 
-// Toggle the menu on small screens
-function toggleMenu() {
-  var nav = document.getElementById("navDemo");
-  if (nav.className.indexOf("w3-show") == -1) {
-    nav.className += " w3-show";
+// Toggle menu on small screens
+function myFunction() {
+  let x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") === -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
   } else {
     nav.className = nav.className.replace(" w3-show", "");
   }
